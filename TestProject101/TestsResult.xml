@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="2" result="Failed" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1" engine-version="3.16.3.0" clr-version="4.0.30319.42000" start-time="2023-05-18 04:37:43Z" end-time="2023-05-18 04:38:53Z" duration="69.652846">
+  <command-line><![CDATA[nunit3-console.exe  C:\Users\Fleek\ProjectC#\TestProject101\TestProject101\bin\Debug\net6.0\TreatiansWeb.dll --result=C:\Users\Fleek\ProjectC#\TestProject101\TestProject101\TestsResult.xml --out=C:\Users\Fleek\ProjectC#\TestProject101\TestProject101\TestsResult.txt]]></command-line>
+  <test-suite type="Assembly" id="1-1003" name="TreatiansWeb.dll" fullname="C:/Users/Fleek/ProjectC#/TestProject101/TestProject101/bin/Debug/net6.0/TreatiansWeb.dll" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2023-05-18T04:37:44.1002513Z" end-time="2023-05-18T04:38:53.3144354Z" duration="69.214134" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+    <environment framework-version="3.13.3.0" clr-version="6.0.16" os-version="Microsoft Windows 10.0.22621" platform="Win32NT" cwd="C:\Users\Fleek\.nuget\packages\nunit.consolerunner\3.16.3\tools" machine-name="DESKTOP-7LCSMC0" user="Fleek" user-domain="DESKTOP-7LCSMC0" culture="en-IN" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\Fleek\.nuget\packages\nunit.consolerunner\3.16.3\tools" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETCoreApp,Version=v6.0" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="TargetRuntimeFramework" value="netcore-6.0" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="8972" />
+      <property name="_APPDOMAIN" value="nunit-agent" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1-1004" name="TreatiansWebApp" fullname="TreatiansWebApp" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2023-05-18T04:37:44.1044880Z" end-time="2023-05-18T04:38:53.3144217Z" duration="69.209934" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1-1000" name="TreatiansWebApp" fullname="TreatiansWebApp.TreatiansWebApp" classname="TreatiansWebApp.TreatiansWebApp" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2023-05-18T04:37:44.1057022Z" end-time="2023-05-18T04:38:53.3138861Z" duration="69.208185" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1-1002" name="LoginTest" fullname="TreatiansWebApp.TreatiansWebApp.LoginTest" methodname="LoginTest" classname="TreatiansWebApp.TreatiansWebApp" runstate="Runnable" seed="2044999232" result="Failed" start-time="2023-05-18T04:38:27.4337723Z" end-time="2023-05-18T04:38:46.1215711Z" duration="18.687939" asserts="1">
+          <failure>
+            <message><![CDATA[  User should be successfully logged in and redirected to the home page.
+  Expected string length 88 but was 68. Strings differ at index 59.
+  Expected: "...ui-cia-test.azurewebsites.net/#/patientDashboard/appointments"
+  But was:  "...ui-cia-test.azurewebsites.net/#/cms/login"
+  ----------------------------------------------^
+]]></message>
+            <stack-trace><![CDATA[   at SignIn.CheckLoginSuccessful() in C:\Users\Fleek\ProjectC#\TestProject101\TestProject101\SignIn.cs:line 46
+   at TreatiansWebApp.TreatiansWebApp.LoginTest() in C:\Users\Fleek\ProjectC#\TestProject101\TestProject101\Tests.cs:line 55
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  User should be successfully logged in and redirected to the home page.
+  Expected string length 88 but was 68. Strings differ at index 59.
+  Expected: "...ui-cia-test.azurewebsites.net/#/patientDashboard/appointments"
+  But was:  "...ui-cia-test.azurewebsites.net/#/cms/login"
+  ----------------------------------------------^
+]]></message>
+              <stack-trace><![CDATA[   at SignIn.CheckLoginSuccessful() in C:\Users\Fleek\ProjectC#\TestProject101\TestProject101\SignIn.cs:line 46
+   at TreatiansWebApp.TreatiansWebApp.LoginTest() in C:\Users\Fleek\ProjectC#\TestProject101\TestProject101\Tests.cs:line 55
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="1-1001" name="SignUpTest" fullname="TreatiansWebApp.TreatiansWebApp.SignUpTest" methodname="SignUpTest" classname="TreatiansWebApp.TreatiansWebApp" runstate="Runnable" seed="2038655417" result="Passed" start-time="2023-05-18T04:38:46.1247712Z" end-time="2023-05-18T04:38:53.1053529Z" duration="6.980582" asserts="0" />
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
